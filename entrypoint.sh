@@ -10,7 +10,7 @@ release_tag=$7
 
 AUTH=$(/oxctl authentication AuthExposedController_getAccessToken \
     --hostname $hostname \
-    --authExposedControllerGetAccessTokenBody.clientId $clien_id \
+    --authExposedControllerGetAccessTokenBody.clientId $client_id \
     --authExposedControllerGetAccessTokenBody.secret $secret \
     )
 
