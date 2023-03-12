@@ -1,5 +1,5 @@
 #!/bin/sh -l
-
+set -x
 hostname=$1
 client_id=$2
 secret=$3
