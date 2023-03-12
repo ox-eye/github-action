@@ -17,6 +17,11 @@ inputs:
   command:
     description: 'Oxeye CICD command'
     required: true
+    type: choice
+    options:
+    - startRelease
+    - getReleaseResults 
+    - getReleaseStatus
   observer:
     description: 'name of the observer'
     required: true
