@@ -18,9 +18,9 @@ if [ "$AUTH" != "" ]
 then
     RESULT=$(/oxctl release $command \ 
         --hostname $hostname \
-        --observerName $observer \
-        --applicationName application \
-        --releaseTag $release_tag \
+        --oxReleaseStart.observerName $observer \
+        --oxReleaseStart.applicationName $application \
+        --oxReleaseStart.releaseTag $release_tag \
         )
     exit 0
 else
