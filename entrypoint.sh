@@ -16,7 +16,7 @@ AUTH=$(/oxctl authentication AuthExposedController_getAccessToken \
 
 if [ "$AUTH" != "" ]
 then
-    RESULT=$(/oxctl release $command \ 
+    RESULT=$(/oxctl release $command \
         --hostname $hostname \
         --oxReleaseStart.observerName $observer \
         --oxReleaseStart.applicationName $application \
